@@ -77,10 +77,15 @@ pip install -r requirements.txt
 
 ### 训练模型
 ```bash
-python train.py --config config.yml
+python train.py
 ```
 
 ### 生成图像
 ```bash
 python generate.py --text "描述文本" --output output.png
+```
+### 对于爬取图像
+修改crawler.py的main
+```python
+    crawler.download_images("你想要的", num_images=数量)
 ```

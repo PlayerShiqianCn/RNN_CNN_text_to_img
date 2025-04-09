@@ -10,7 +10,7 @@ class Config:
     
     # 模型配置
     vocab_size = 10000  # 词汇表大小
-    image_size = 64     # 生成图像的大小 (k x k)
+    image_size = 128    # 生成图像的大小 (k x k)
     channels = 3        # 图像通道数
     
     # 文本编码器配置
@@ -60,7 +60,7 @@ class Config:
     log_interval = 100
     
     # 设备配置
-    device = "cpu# "cuda" 或 "cpu"
+    device = "cpu" #cuda或cpu
     
     # 随机种子
     seed = 42
